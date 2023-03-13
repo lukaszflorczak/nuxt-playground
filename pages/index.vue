@@ -3,9 +3,10 @@
     <h1>Click the link, then refresh the website</h1>
 
     <ol>
-      <li><nuxt-link :to="`/search?s=${phrase1}`">Single Word</nuxt-link></li>
-      <li><nuxt-link :to="`/search?s=${phrase2}`">Multiple Words with Spaces and Quotes</nuxt-link></li>
-      <li><nuxt-link :to="`/search?s=${phrase3}`">Phrase with `+` char</nuxt-link></li>
+      <li><nuxt-link :to="`/search?s=${phrase1}`">{{`/search?s=${phrase1}` }}</nuxt-link></li>
+      <li><nuxt-link :to="`/search?s=${phrase2}`">{{ `/search?s=${phrase2}` }}</nuxt-link></li>
+      <li><nuxt-link :to="`/search?s=${phrase3}`">{{ `/search?s=${phrase3}` }}</nuxt-link></li>
+      <li><nuxt-link :to="/one+two">/one+two</nuxt-link></li>
     </ol>
   </div>
 </template>
