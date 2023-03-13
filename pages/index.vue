@@ -6,7 +6,7 @@
       <li><nuxt-link :to="`/search?s=${phrase1}`">{{`/search?s=${phrase1}` }}</nuxt-link></li>
       <li><nuxt-link :to="`/search?s=${phrase2}`">{{ `/search?s=${phrase2}` }}</nuxt-link></li>
       <li><nuxt-link :to="`/search?s=${phrase3}`">{{ `/search?s=${phrase3}` }}</nuxt-link></li>
-      <li><nuxt-link :to="/one+two">/one+two</nuxt-link></li>
+      <li><nuxt-link to="/one+two">/one+two</nuxt-link></li>
     </ol>
   </div>
 </template>
