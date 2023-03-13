@@ -2,10 +2,13 @@
   <div>
     <h1>Index</h1>
 
-    <nuxt-link :to="`/search?s=${phrase}`" >{{ phrase }}</nuxt-link>
+    <nuxt-link :to="url">Multiple Words with Spaces and Quotes</nuxt-link>
   </div>
 </template>
 
 <script lang="ts" setup>
-  const phrase = '"Multiple Words with Spaces and Quotes"'
+  import { normalizeURL } from 'ufo'
+
+  const phrase = '"Two Words"'
+  const url = normalizeURL(`/search?s=${phrase}`)
 </script>
